@@ -13,8 +13,13 @@ function getAndPrintHTMLChunks () {
 
     response.setEncoding('utf8');
 
+    // console.log(response);
+
     response.on('data', function (data) {
-      console.log(data + "\n");
+      // data.forEach (function (element) {
+        console.log(data);
+      // });
+
     });
 
     // response.end('end', function () {
